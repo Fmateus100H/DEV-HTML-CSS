@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Links externos</h1>
+    <p>
+        Você pode acessar o meu <a href="https://github.com/Fmateus100H">repositório público no GitHub</a>
+    </p>
+    <!--"href" é referência a hipertexto-->
+    <p>
+        Para acessar o vídeo onde aprendi isso, abrindo uma nova guia, <a href="https://www.youtube.com/watch?v=LeOVXQDsAIY&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=27&t=2s" target="_blank" rel="external">clique aqui</a>
+    </p>
+    <!--"rel" é relativo ao externo, nesse caso
+        "target" é o 'alvo'-->
+    <h1>Links internos</h1>
+    <p>Esta é a minha primeira página do site, se você quiser, pode acessar também a minha <a href="pag002.html" rel="next">segunda página</a></p>
+    <!--ctrl+space no href mostra as opções de páginas internas
+    
+    O rel é opcional, mas é bom colocar, indica que é a proxima página (dizemos isso ao mecanismo de busca)-->
+    <p>
+        Esta página é um oferecimento de <a href="https://pt-br.facebook.com/" rel="nofollow">Facebook</a>
+    </p>
+    <!--'nofollow', não seguir, diz ao mecanismo de busca para não 'inspecionar' esse link.
+    Em outras palavras, pede pro mecanismo de busca não dar aval para esse link... alguns patrocinadores até pedem para não colocarem isso-->
+    <p>
+        Também pode acessar a página de notícias, <a href="noticias/pag003.html" rel="next" target="_self">página 3</a>
+    </p>
+    <!--_self serve p abrir na própria aba... nesse caso é opcional-->
+
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/10 - Ligações em toda parte.pdf" download="meulivro.pdf" type="application/pdf">Baixar o livro em PDF</a></li>
+
+        <!--esse type faz o download do pdf, para outros formatos, pode achar no site:
+        http://www.iana.org/assignments/media-types/media-types.xhtml
+        -->
+
+        <li><a href="livro/10 - Ligações em toda parte.zip" download="meulivro.zip" type="application/zip">Baixar o livro em ZIP</a></li>
+    </ul>
+</body>
+</html>
