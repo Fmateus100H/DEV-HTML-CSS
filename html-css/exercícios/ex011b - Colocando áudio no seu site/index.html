@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+</head>
+<body>
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir áudios em HTML5</p>
+    <!--assim colocaria o áudio mp3 direto
+        <audio src="Áudio/presepada.mp3" controls autoplay></audio> -->
+
+    <!--Abaixo o navegador tenta executar cada um na ordem, se um formato de áudio der erro ele tenta executar o próximo formato-->
+
+    <!--sobre os preload:
+        AUTO: só considera q o site carregou quando carregar todo o áudio tbm
+        METADATA: Recomendado, carrega só algumas informações básicas do arquivo, carrega o áudio apenas ao dar play
+        NONE: carrega nada, só quando o usuário dá play
+    -->
+    <!--
+        autoplay: dá play automaticamente (depende)
+        controls: mostra os controles de play
+        loop: dá loop
+    -->
+    <audio preload="metadata" autoplay controls loop>
+        <source src="Áudio/presepada.mp3" type="audio/mpeg">
+        <source src="Áudio/presepada.ogg" type="audio/ogg">
+        <source src="Áudio/presepada.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não reproduz áudio, <a href="Áudio/presepada.mp3">clique aqui</a> para baixar o arquivo mp3</p>
+    </audio>
+    <!--arquivos WAV são grandes e pesados, não é recomendado no site, mesmo que tenha uma qualidade superior-->
+</body>
+</html>
