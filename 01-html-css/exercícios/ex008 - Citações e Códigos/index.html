@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript</p>
+    <!--o code deixa as letras com o mesmo espaçamento-->
+    <pre>
+        <code>
+num = int(input('Digite um número\n'))
+if num % 2 == 0:
+    print(f'O número {num} é PAR')
+else:
+    print(f'O número {num} é ÍMPAR')
+print('Fim do programa')
+        </code>
+    </pre>
+    <!--o PRE faz as quebras de linhas serem aceitas-->
+    <!--shift+TAB tira alguns TABs/espaços-->
+    <!--TAB acrescenta espaços-->
+    <h2>Citações</h2>
+    <p>Como diria Pitágoras: <q>A soma dos quadrados dos catetos é igual ao quadrado da hipotenusa</q></p>
+    <p>Segundo Sebastian Stan, em tom de ironia, disse:</p>
+    <blockquote cite="https://legadodamarvel.com.br/ator-de-vingadores-detona-tom-holland-e-diz-que-nao-viu-homem-aranha-3/">
+        <q><em>Tipicamente eu não gosto de apoiar o Tom Holland, então é difícil. Eu apoio os filmes, mas não ele. Ainda não vi o filme porque não fui aos cinemas. Mas eu quero ver porque amo a ideia de trazer de volta todos esses personagens do passado. E só ver todos eles interagirem nesse filme.</em></q>
+    </blockquote>
+    <!--blockquote é uma citação grande, pulando de linha, no CITE põe a fonte-->
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+    <!--abbr mostra o significado de uma palavra ao passar o mouse por cima-->
+    <h2>Texto invertido</h2>
+    <p><bdo dir="ltr">Eu sou lindo demais</bdo></p>
+    <p><bdo dir="rtl">Eu sou lindo demais</bdo></p>
+</body>
+</html>
