@@ -1,2 +1,2 @@
-# DEV-HTML-CSS
-Registros de aulas do curso de HTML e CSS do professor Guanabara
+# DEV-WEB
+Registros de aulas do curso de HTML, CSS e JS do professor Guanabara
