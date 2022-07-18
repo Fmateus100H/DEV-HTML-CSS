@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex 4</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual o seu nome?")
+
+        document.write(`Olá ${nome}! Seu nome tem ${nome.length} letras.<br/>`) //isso ESCREVE no DOCUMENTO 
+
+        document.write(`Seu nome em maiúsculo: ${nome.toUpperCase()}.<br/>`)
+
+        //formatando números
+
+        var n1 = 833.6
+        n1 = n1.toFixed(2).replace('.', ',') //fixa duas casas decimais //troca o . por vírgula
+        document.write(n1)
+
+    </script>
+</body>
+</html>
