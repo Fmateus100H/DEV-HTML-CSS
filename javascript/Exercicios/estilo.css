@@ -1,15 +1,18 @@
 body {
-    background-color: rgb(116, 116, 243);
+    background-color: #5a9ae8;
     font: normal 15pt Arial;
 }
 
 header {
     color: white;
     text-align: center;
+    letter-spacing: 2px;
+    
 }
 
 section {
     background: white;
+    text-align: center;
     border-radius: 10px;
     padding: 15px;
     width: 500px;
@@ -22,3 +25,10 @@ footer {
     text-align: center;
     font-style: italic;
 }
+
+img {
+    padding: 15px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
